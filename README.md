@@ -1,5 +1,11 @@
 # Machine-Learning-on-Commodity-Price-Forecast
 
+## ML5_Amended_TimeSeriesSplit
+
+ML5_Amended_TimeSeriesSplit is a folder that holds 12 programming files for 4 months forecast and 12 months forecast of the 6 commodities. It is an amendment to ML5. The amended file now used sklearn's TimeSeriesSplit as cv for GridSearchCV and removed the shuffling in train test split to ensure trainining data and testingd data are in chronological order. The original ML5 had a crucial mistake in shuffling training set and testing set, a common practice as adopted by many others in solving regression problem. The 12 programming files are essentially the same codes, except `forecast_out` period and chosen `target`.
+
+## Wriiten on 20220428
+
 There are total 8 programming files in the repository. The final submitting files are ML5_Forecasting_20220409.ipynb and Webapp_20220410.ipynb. The others are past versions and prelimianry tests of models, only serving the purposes of proof of concepts and workability, therefore only completed to a certain extent.
 
 The files in this repository listed in descending chronological order:
