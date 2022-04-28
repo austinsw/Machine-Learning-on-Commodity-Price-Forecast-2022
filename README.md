@@ -2,7 +2,7 @@
 
 ## ML5_Amended_TimeSeriesSplit
 
-ML5_Amended_TimeSeriesSplit is a folder that holds 12 programming files for 4 months forecast and 12 months forecast of the 6 commodities. It is an amendment to ML5. The amended file now used sklearn's TimeSeriesSplit as cv for GridSearchCV and removed the shuffling in train test split to ensure trainining data and testingd data are in chronological order. The original ML5 had a crucial mistake in shuffling training set and testing set, a common practice as adopted by many others in solving regression problem. The 12 programming files are essentially the same codes, except `forecast_out` period and chosen `target`.
+ML5_Amended_TimeSeriesSplit is a folder that holds 12 programming files for 4 months forecast and 12 months forecast of the 6 commodities. It is an amendment to ML5. The amended file now used sklearn's TimeSeriesSplit as cv for GridSearchCV and removed the shuffling in train test split to ensure trainining data and testingd data are in chronological order. The original ML5 had a questioning approach in shuffling training set and testing set, a common practice as adopted by many others in solving regression problem. The 12 programming files are essentially the same codes, except `forecast_out` period and chosen `target`.
 
 Unfortunately, the results are quite dissatisfying. The accuracy scores after adopting TimeSeriesSplit are either negative or close to 0. This shows that these regression models are not enoguh to correctly predict the price movments of commodiities to earn profits.
 
